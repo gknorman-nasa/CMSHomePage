@@ -112,11 +112,6 @@ h6 .small,
   content: " ";
 }
 
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -260px;
-}
-
 .navbar {
     margin-bottom: 0;
     background-color: #000000;
@@ -315,9 +310,7 @@ h6 .small,
     font-size: 4.5em;
 }
 
-.banner {
-    height: 20rem;
-}
+
 
 .banner-background {
     width: 100%;

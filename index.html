@@ -12,50 +12,186 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="bootstrap_4_6_0_dist/js/bootstrap.bundle.js"></script>
 
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="css/cms-theme.css">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    
-
-    <!-- <link rel="stylesheet" type="text/css" href="nasa.css"> -->
-    <link rel="stylesheet" type="text/css" href="theme.css">
-    
 
 
     <title>The Celestial Mapping System</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper banner-wrapper">
         <div class="banner">
-        	<canvas class="banner-background" id="banner-worldwindow" width="1243" height="500" style="touch-action: none;"></canvas>
-            <div class="banner-text">
-                <h1>Celestial Mapping System</h1>
-            </div>
+                    <div class="row banner-logos">
+                        <div class="cms-logo-col">
+                            <img class="cms-logo" src="img/cms-logo.png">
+                        </div>
+                        <div class="nasa-logo-col"> 
+                            <img class="cms-logo" src="img/nasa-meatball-logo.png">
+                        </div>
+                    </div>
+                    <div class="cms-banner-text">
+                        <br>
+                        <h1>Celestial Mapping System</h1>
+                        <h2>NASA Ames Research Center</h2>
+                    </div>
+                    <div class="jumbotron jumbotron-fluid">
+                </div>
+            <!-- </div> -->
         </div>
     </div>
-    
-    <div class="container">
+    <br>
+    <div class="container body-container">
         <h2 class="text-center">What is the Celestial Mapping System?</h2>
-        <p>WorldWind is an open source virtual globe API. WorldWind allows developers to quickly and easily create
-            interactive visualizations of 3D globe, map and geographical information. Organizations around the world use
-            WorldWind to monitor weather patterns, visualize cities and terrain, track vehicle movement, analyze
-            geospatial data and educate humanity about the Earth.</p>
-<!--         <div class="row button">
-            <div class="text-center">
-                <p><a href="http://explorer.worldwind.earth/" target="_blank"><button type="button" class="btn btn-primary btn-lg">Explore a WorldWind demo</button></a></p>
-            </div>
-        </div> -->
+        <p>
+            The Celestial Mapping System (CMS) is a software platform to generate virtual 3D globes for celestial bodies within our solar system. Various layers are built on top of the virtal globe to provide visualization of high resolution imagery, enable precise measurements, build analytical capabilities and a broad range of functionalities to assist planetary scientists and mission planners. 
+        </p>
+        <p>
+            The present focus of CMS is on developing lunar mapping tool kits to provide features such as - 3D first person view with zoom and navigational capabilities, realistic terrain visualization based on LRO data, measurement tools, Apollo landing site annotations, stereoscopic view, elevation profiles, line of sight analysis and many more. The application is developed to provide situational and domain awareness on the Lunar surface, planning capabilities for equipment placements and traverse path optimization.
+        </p>
         <br>
     </div>
     <hr>
     <div class="container">
-        <h2 class="text-center">Features and Benefits</h2>
+         <h2 class="text-center">Current Capabilities</h2>
+        <br>
+        <div class="row">
+            <div class="col">
+                <ul class="list-group">
+                    <li>
+                        Accurate display of lunar imagery and terrain at 100mpp, and their geometric figures.​
+                    </li>
+                    <li>
+                        Ability to accurately measure and profile terrain elevation.​    
+                    </li>
+                    <li>
+                        Accurate display of lunar place names of known locations.        
+                    </li>
+            
+                    <li>
+                        Interactive 3D models of Apollo Astronauts and the vehicles remaining at the Apollo landing sites.
+                    </li>
+                     <li>
+                        Georeferenced imagery of Apollo landing sites​​​.
+                    </li>
+                    <li>
+                        Stereographic "3D" view​ of the lunar surface.​
+                    </li>
+                    <li>
+                        High quality graticules​
+                    </li>
+                    <li>
+                        Navigation capabilities; view controls, scalebar, and graticules.
+                    </li>
+                    <li>
+                        2D Minimap with click to navigate functionality
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="list-group">
+                    <li>
+                        Server access to implement new datasets​ and high resolution map layers.
+                    </li>
+                    <li>
+                        Moon Shading/Illumination with Sun Angle Calculations by user selected date and time
+                    </li>
+                    <li>
+                        Import/Export for KML, CSV, and GeoTIFF
+                    </li>
+                    <li>
+                        Ability to calculate and display lunar terrain intersections from a central viewpoint.
+                    </li>
+                    <li>
+                        "Go To" decimal degree coordinates feature
+                    </li>
+                    <li>
+                        Ability to add customizable named placemarks at a set of coordinates. 
+                    </li>
+
+                    <li>
+                        WMS Layer Manager
+                    </li>
+                    <li>
+                        Searchable table of over 1000 named features that can be sorted and clicked in order to display placemarks and their annotations.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>
+                    <h3 class="text-center">Works in Progress</h3>
+                </p>
+                <ul class="list-group">
+                    <li>
+                        Ability to simulate a “first person view” with situational and domain awareness of a vehicle traversing the lunar landscape​
+                    </li>
+                    <li>
+                        Subsurface visualization & analysis.
+                    </li>
+                    <li>
+                        Real time satellite tracker
+                    </li>
+                    <li>
+                        Virtual Reality support
+                    </li>
+                    <li>
+                        Lunar resource assessment 
+                    </li>
+                    <li>
+                        Simulation of cislunar satellites.
+                    </li>
+                    <li>
+                        Mission planning capabilities for equipment placements and traverse path optimization.
+                    </li>
+                    <li>
+                        Ability to visualize map projections from other celestial bodies.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Video 1 - 2020 Capabilities</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video width="1920" height="1080" controls="true" class="embed-responsive-item" >
+                        <source src="video/Video001_Fall2020.mp4" type="video/mp4">
+                    </video>
+<!--                     <iframe class="embed-responsive-item" src="video/Video001_Fall2020.mp4" allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Video 2 - 2021 Capabilities</h2>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video width="1920" height="1080" controls="true" class="embed-responsive-item" >
+                        <source src="video/Video002b_Spr2021.mp4" type="video/mp4">
+                    </video>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div class="container">
+        <h2 class="text-center">Images</h2>
         <br>
         
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- Carousel should pop out a gallery view of pictures -->
+        <div id="carouselExampleIndicators" data-toggle="modal" data-target="#exampleModal" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -63,21 +199,21 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
+            <img class="d-block w-100" src="img/SouthernCraters.png" alt="First slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
+            <img class="d-block w-100" src="img/latlongrat.png" alt="Second slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
+            <img class="d-block w-100" src="img/apollo17objects.png" alt="Third slide">
             <div class="carousel-caption d-none d-md-block">
                 <h5>My Caption Title (1st Image)</h5>
                 <p>The whole caption will only show up if the screen is at least medium size.</p>
@@ -92,112 +228,130 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
+    </div>
     
-    <br>
-    <br>
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">Built on Proven Technology</h3>
-                <p>Because CMS is built on NASA's open source software, WorldWind, all of the core and extended features previously developed for 3D Earth Models can be applied to other celestial bodies. This
-                    creates a powerful platform for expressing, manipulating and analyzing
-                    spatial data from the Lunar Surface and beyond.  Since Worldwind is based on Java's interoperable technology, CMS can run in any desktop environment that supports JVM.</p>
-            </div>
-<!--             <div class="col-md-4">
-                <h3 class="text-center">Build what you want</h3>
-                <p>WorldWind is different from a 3D globe like Google Earth because it is not an application. Instead,
-                    it is an SDK (software development kit) that software engineers can use to build their own
-                    applications. WorldWind provides a geographic rendering engine for powering a wide range of
-                    projects, from satellite tracking systems to flight simulators.</p>
-            </div>
-            <div class="col-md-4">
-                <h3 class="text-center">NASA does the heavy lifting</h3>
-                <p>With WorldWind handling the hard work of visualizing geographic data (generating terrain from
-                    elevation models, selecting and displaying images from imagery servers, etc), software engineers are
-                    free to focus on solving the problems specific to their own domains and more easily building
-                    whatever geospatial applications they choose.</p> -->
-         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h3 class="text-center">Big Feature 1</h3>
-                <p>Because CMS is built on NASA's open source software, WorldWind, all of the core and extended features previously developed for 3D Earth Models can be applied to other celestial bodies. This
-                    creates a powerful platform for expressing, manipulating and analyzing
-                    spatial data from the Lunar Surface and beyond.  Since Worldwind is based on Java's interoperable technology, CMS can run in any desktop environment that supports JVM.</p>
-            </div>
-            <div class="col-md-8">
-                <h3 class="text-center">Big Feature 1 Image</h3>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img width="500" height="300" src="https://placeimg.com/500/300/nature" class="img-responsive center-block d-block mx-auto" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
-
-            </div>
         </div>
+         <br>
+         <br>
     
     <hr>
     <div class="container">
     	<br>
     	<br>
-        <h2 class="text-center">Get Started</h2>
+        <h2 class="text-center">Meet the Team</h2>
+        <br>
+        <br>
         <div class="row">
-        	<br>
-    		<br>
             <div class="col-md-4">
-                <h3 class="text-center">Web WorldWind</h3>
-                <p>Create a web app or simply embed a globe in your page. For more information see the project's
-                    <a href="https://worldwind.arc.nasa.gov/web">home page</a>. To get right into the code, check out the
-                    <a href="https://github.com/NASAWorldWind/WebWorldWind">Web WorldWind GitHub repository</a>.</p>
+                <h4 class="text-center">Dr. Parul Agrawal</h4>
+                <br>
+                <figure class="figure img-responsive center-block d-block mx-auto">
+                    <img src="profile-img/parulagrawal2.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+                 <br>
             </div>
+            <br class="extra-space">
             <div class="col-md-4">
-                <h3 class="text-center">WorldWind Android</h3>
-                <p>Develop a world-class WorldWind application for your Android phone or tablet. Instructions,
-                    tutorials, and examples are available on the project's <a href="https://worldwind.arc.nasa.gov/android">home page</a>. The
-                    <a href="https://github.com/NASAWorldWind/WorldWindAndroid">WorldWind Android GitHub repository</a>
-                    contains the library and code.</p>
+                <h4 class="text-center">Mark Peterson</h4>
+                <br>
+                <figure class="figure img-responsive center-block d-block mx-auto">
+                    <img src="https://placeimg.com/150/150/nature" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+                 <br>
             </div>
+            <br class="extra-space">
             <div class="col-md-4">
-                <h3 class="text-center">WorldWind Java</h3>
-                <p>Build a cross-platform geospatial desktop application in Java. For lots of examples and
-                    documentation go to the project's <a href="https://worldwind.arc.nasa.gov/java">home page</a>. Or clone the
-                    <a href="https://github.com/NASAWorldWind/WorldWindJava">WorldWind Java GitHub repository</a>
-                    and start coding.</p>
+                <h4 class="text-center">Miguel Del Castillo</h4>
+                <br>
+                <figure class="figure img-responsive center-block d-block mx-auto">
+                    <img src="https://placeimg.com/150/150/arch" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+                 <br>
             </div>
+             <br>
+        </div>
+        <br>
+        <br>
+        <div class="row row-eq-height">
+            <div class="col-md-3 text-center">
+                <h4 class="text-center give-me-less-height">Kaitlyn Dickinson</h4>
+                <figure class="figure img-responsive center-block d-block mx-auto">
+                    <img src="https://placeimg.com/150/150/arch" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+                 <br>
+            </div>
+            <br>
+            <div class="col-md-3">
+                <h4 class="text-center give-me-more-height">Hari Iyer</h4>
+                <figure class="figure img-responsive center-block d-block mx-auto ">
+                    <img src="profile-img/HariIyer.png" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+                <br>
+            </div>
+             <br>
+                <div class="col-md-3">
+                <h4 class="text-center give-me-less-height">Geoffrey Norman</h4>
+                <figure class="figure img-responsive center-block d-block mx-auto">
+                    <img src="https://placeimg.com/150/150/animals" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+                <br>
+            </div>
+             <br>
+                        <div class="col-md-3">
+                <h4 class="text-center give-me-more-height">Tyler Choi</h4>
+                <figure class="figure img-responsive center-block d-block mx-auto">
+                    <img src="https://placeimg.com/150/150/nature" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
+                </figure>
+            </div>
+            <br>
+        </div>
+         <br>
+    </div>
+
+   </div> 
+
+  <div class="card text-center">
+
+  <div class="card-body">
+    <h3 class="card-title">Contact Dr. Parul Agrawal for questions regarding the Celestial Mapping System:</h3>
+    <br>
+    <a href="mailto:parul.agrawal-1@nasa.gov" class="btn btn-dark"><h3 id="email-us">Email Us</h3></a>
+  </div>
+
+</div>
+
+    <div class="wrapper banner-wrapper">
+        <div class="page-end-spacer">
+            <div class="banner">
+            <!-- <canvas class="banner-background" id="banner-cms" width="1280" height="500" style="touch-action: none;">
+             <img src="img/steel_flipped.png" class="img-fluid" alt="Cropped image of LOLA Steel Blue projection of the lunar surface.">   
+            </canvas> -->
+            <!-- <div class="container"> -->
+                
+                    <div class="row banner-logos">
+                        <div class="cms-logo-col">
+                            <img class="cms-logo" src="img/cms-logo.png">
+                        </div>
+                        <div class="nasa-logo-col"> 
+                            <img class="cms-logo" src="img/nasa-meatball-logo.png">
+                        </div>
+                    </div>
+            <!-- </div> -->
+        </div>
         </div>
     </div>
-    <hr>
-    <div>
-    	<br>
-    	<br>
-        <p class="container text-center">WorldWind's source code, issue tracking and releases are available on GitHub and managed by the NASA
-            WorldWind development team.</p>
-        <p class="container text-center"><a href="https://github.com/NASAWorldWind/"><img id="github" src="" width="32" alt="GitHub Octocat logo">github.com/NASAWorldWind</a></p>
-    </div>
-    
-    <div>
-        <footer id="fh5co-footer" class="overlay fh5co-bg">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row row-pb-md">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-1 fh5co-widget"><a href="https://worldwind.arc.nasa.gov/">
-                            <h3 class="text-center">Home</h3>
-                        </a></div>
-                    <div class="col-md-2 fh5co-widget"><a href="https://worldwind.arc.nasa.gov/news">
-                            <h3 class="text-center">News</h3>
-                        </a></div>
-                    <div class="col-md-2 fh5co-widget"><a href="https://github.com/NASAWorldWind">
-                            <h3 class="text-center">Source Code</h3>
-                        </a></div>
-                    <div class="col-md-2 fh5co-widget"><a href="https://worldwind.arc.nasa.gov/about">
-                            <h3 class="text-center">About</h3>
-                        </a></div>
-                    <div class="col-md-2 fh5co-widget"><a href="https://worldwind.arc.nasa.gov/contact">
-                            <h3 class="text-center">Contact</h3>
-                        </a></div>
-                </div>
-            </div>
-        </footer>
-    </div>
+
+
 </body>
+
+    <!-- For simplicity, loading this script after the DOM is loaded by placing it at the end of the document for now. -->
+    <!-- <script type="text/javascript" src="js/canvasbg.js"></script> -->
 
 </html>
