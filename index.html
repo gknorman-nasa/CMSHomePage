@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/cms-theme.css">
 
+    <script type="text/javascript" src="./js/carousel_img_modal.js"></script>
+
 
 
     <title>The Celestial Mapping System</title>
@@ -22,42 +24,222 @@
 <body>
     <div class="wrapper banner-wrapper">
         <div class="banner">
-                    <div class="row banner-logos">
-                        <div class="cms-logo-col">
-                            <img class="cms-logo" src="img/cms-logo.png">
-                        </div>
-                        <div class="nasa-logo-col"> 
-                            <img class="cms-logo" src="img/nasa-meatball-logo.png">
-                        </div>
-                    </div>
-                    <div class="cms-banner-text">
-                        <br>
-                        <h1>Celestial Mapping System</h1>
-                        <h2>NASA Ames Research Center</h2>
-                    </div>
-                    <div class="jumbotron jumbotron-fluid">
+            <div class="row banner-logos">
+                <div class="cms-logo-col">
+                    <img class="cms-logo" src="img/cms-logo.png">
                 </div>
+                <div class="nasa-logo-col"> 
+                    <img class="cms-logo" src="img/nasa-meatball-logo.png">
+                </div>
+            </div>
+            <div class="cms-banner-text">
+                <br>
+                <h1>Celestial Mapping System</h1>
+                <h2>NASA Ames Research Center</h2>
+            </div>
+<!--             <div class="jumbotron jumbotron-fluid">
+
+            </div> -->
+            <div class="container" id="banner-carousel">
+                <!-- <h2 class="text-center">Images</h2> -->
+                <!-- <br> -->
+
+                <!-- Carousel should pop out a gallery view of pictures -->
+                <div id="carouselSlides" data-toggle="modal" data-target="#exampleModal" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselSlides" data-slide-to="0" class="active">LOLA Steel Blue</li>
+                        <li data-target="#carouselSlides" data-slide-to="1"></li>
+                        <li data-target="#carouselSlides" data-slide-to="2"></li>
+                        <li data-target="#carouselSlides" data-slide-to="3"></li>
+                        <li data-target="#carouselSlides" data-slide-to="4"></li>
+                        <li data-target="#carouselSlides" data-slide-to="5"></li>
+                        <li data-target="#carouselSlides" data-slide-to="6"></li>
+                        <li data-target="#carouselSlides" data-slide-to="7"></li>
+                        <li data-target="#carouselSlides" data-slide-to="8"></li>
+                        <li data-target="#carouselSlides" data-slide-to="9"></li>
+                        <li data-target="#carouselSlides" data-slide-to="10"></li>
+                        <li data-target="#carouselSlides" data-slide-to="11"></li>
+                        <li data-target="#carouselSlides" data-slide-to="12"></li>
+                        <li data-target="#carouselSlides" data-slide-to="13"></li>
+                        <li data-target="#carouselSlides" data-slide-to="14"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div data-slide-number="0" class="carousel-item active fancybox">
+                            <img class="c-img d-block w-100" src="img/blue005.png" alt="First slide - LOLA Blue Steel">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="invisible">LOLA Color Shaded Relief Blue Steel</h5>
+                                <p class="invisible">3D terrain with LOLA Color Shaded Relief Blue Steel derived from LRO elevation data without vertical exaggeration.</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="1" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/latlongrat.PNG" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Lat-Lon Graticule conforming to Mountains</h5>
+                                <p>Path conforming Lat-Lon graticules provide accurate analysis of the lunar surface.</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="2" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/apollo17objects.PNG" alt="Third slide - Apollo 17 Landing Site with example 3D COLLADA objects representing astronauts and the Apollo 15 landing craft.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Apollo 15 Landing Site 3D Objects</h5>
+                                <p>Example of 3D COLLADA objects in CMS, showing astronauts and landing craft at the Apollo 15 landing site.</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="3" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/ApolloMissions.PNG" alt="Fourth slide - Apollo Landing sites with annotations on the lunar surface showing location and mission badges.">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>Apollo Mission Landing Sites</h5>
+                                <p>These "balloon" annotations show various Apollo landing sites along with their respective mission dates and badges.</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="4" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/GARS.PNG" alt="Fifth slide - GARS graticule over Copernicus Crater">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>GARS graticule over Copernicus Crater</h5>
+                                <p>Path conforming Lat-Lon graticules provide accurate analysis of the lunar surface.</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="5" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100 object-position-top" src="img/UnifiedGeologicMap.png" alt="Sixth slide - 2020 Unified Geologic Map of the Moon">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>2020 Unified Geologic Map of the Moon</h5>
+                                <p>One of the newest data sets in CMS, the 2020 Unified Geologic Map of the Moon is a seamless renovation of six previous maps combined with data from multiple space agencies.</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="6" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/stereo2.PNG" alt="Seventh slide - Stereoscopic View of a mountainous crater">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Stereoscopic View of a mountainous crater</h5>
+                                <p>Stereo view using Red and Blue overlays brings out craters and prominent features</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="7" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/venus1.PNG" alt="Eighth slide - 3D Projection of Venus">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>3D Projection of Venus</h5>
+                                <p>CMS has the potential to project data from any celestial body onto a 3D Globe Object.</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="8" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/moon4.PNG" alt="Ninth slide - LOLA Color Shaded Relief Map">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>LOLA Color Shaded Relief Map</h5>
+                                <p>Maps from various missions can be projected using CMS, such as this LOLA Color Shaded Relief Map (388m/px)</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="9" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/profiler2.PNG" alt="Tenth slide - Terrain Elevation Profile Tool">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Terrain Elevation Profile Tool</h5>
+                                <p>Analysis of the the elevation profile of Mare Orientale​.</p>
+                            </div>
+                        </div>
+                         <div data-slide-number="10" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/sp.PNG" alt="Eleventh slide - South Pole LOLA Color Shaded Relief Projection">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>South Pole LOLA Color Shaded Relief Projection</h5>
+                                <p>Projection of the Lunar South Pole derived from LRO elevation data ​using the LOLA Color Shaded Relief map layer</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="11" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/placemarks.PNG" alt="Twelfth slide - USGS Lunar Placemarks">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>USGS Lunar Placemarks</h5>
+                                <p>CMS contains Shapefiles from USGS that display over 7000 lunar landmarks</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="12" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/mars3.PNG" alt="Thirteenth slide - 3D Projection of Mars">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>3D Projection of Mars</h5>
+                                <p>CMS has the potential to project data from any celestial body onto a 3D Globe Object.</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="13" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/titancms.PNG" alt="Fourteenth slide - 3D Projection of Titan">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>3D Projection of Titan</h5>
+                                <p>CMS has the potential to project data from any celestial body onto a 3D Globe Object.</p>
+                            </div>
+                        </div>
+                        <div data-slide-number="14" class="carousel-item fancybox">
+                            <img class="c-img d-block w-100" src="img/moonshading.png" alt="Fifthteenth slide - Moon Shading Simulation">
+                            <div class="carousel-caption d-none d-md-block dark-caption-background">
+                                <h5>Moon Shading Simulation</h5>
+                                <p>Users can enter a start and end date and simulate the passage of the sun across the moon's surface.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
             <!-- </div> -->
         </div>
     </div>
     <br>
+
     <div class="container body-container">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+
+                <div class="modal-content container-fluid">
+                    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                        <div class="modal-header row">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title text-center col-12" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Change image source for large popup-->
+                            
+                            <img src='' id="modal-img-id" class="img-responsive modal-img" alt="Responsive image">
+                            <a class="carousel-control-prev" href="#carouselSlides" role="button" data-slide="prev" id="modal-prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                             <a class="carousel-control-next" href="#carouselSlides" role="button" data-slide="next" id="modal-next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                        <div class="modal-footer">
+                            <h5 class="modal-title text-center col-12" id="myModalFooter"></h5>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+                   
+                    
+              </div>
+        </div>
+    <div class="container">
         <h2 class="text-center">What is the Celestial Mapping System?</h2>
-        <p>
+        <p class="weight-600">
             The Celestial Mapping System (CMS) is a software platform to generate virtual 3D globes for celestial bodies within our solar system. Various layers are built on top of the virtal globe to provide visualization of high resolution imagery, enable precise measurements, build analytical capabilities and a broad range of functionalities to assist planetary scientists and mission planners. 
         </p>
-        <p>
+        <p class="weight-600">
             The present focus of CMS is on developing lunar mapping tool kits to provide features such as - 3D first person view with zoom and navigational capabilities, realistic terrain visualization based on LRO data, measurement tools, Apollo landing site annotations, stereoscopic view, elevation profiles, line of sight analysis and many more. The application is developed to provide situational and domain awareness on the Lunar surface, planning capabilities for equipment placements and traverse path optimization.
         </p>
         <br>
     </div>
     <hr>
     <div class="container">
-         <h2 class="text-center">Current Capabilities</h2>
-        <br>
-        <div class="row">
+       <h2 class="text-center">Current Capabilities</h2>
+       <br>
+       <div class="row">
             <div class="col">
-                <ul class="list-group">
+                <ul class="list-group weight-600">
                     <li>
                         Accurate display of lunar imagery and terrain at 100mpp, and their geometric figures.​
                     </li>
@@ -67,11 +249,11 @@
                     <li>
                         Accurate display of lunar place names of known locations.        
                     </li>
-            
+
                     <li>
                         Interactive 3D models of Apollo Astronauts and the vehicles remaining at the Apollo landing sites.
                     </li>
-                     <li>
+                    <li>
                         Georeferenced imagery of Apollo landing sites​​​.
                     </li>
                     <li>
@@ -89,7 +271,7 @@
                 </ul>
             </div>
             <div class="col">
-                <ul class="list-group">
+                <ul class="list-group weight-600">
                     <li>
                         Server access to implement new datasets​ and high resolution map layers.
                     </li>
@@ -118,7 +300,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
     <br>
     <hr>
@@ -128,7 +309,7 @@
                 <p>
                     <h3 class="text-center">Works in Progress</h3>
                 </p>
-                <ul class="list-group">
+                <ul class="list-group weight-600">
                     <li>
                         Ability to simulate a “first person view” with situational and domain awareness of a vehicle traversing the lunar landscape​
                     </li>
@@ -162,12 +343,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2 class="text-center">Video 1 - 2020 Capabilities</h2>
+                <br>
+                <h2 class="text-center">Video Demonstration 1</h2>
+                <br>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video width="1920" height="1080" controls="true" class="embed-responsive-item" >
                         <source src="video/Video001_Fall2020.mp4" type="video/mp4">
                     </video>
-<!--                     <iframe class="embed-responsive-item" src="video/Video001_Fall2020.mp4" allowfullscreen></iframe> -->
                 </div>
             </div>
         </div>
@@ -175,183 +357,133 @@
         <hr>
         <div class="row">
             <div class="col">
-                <h2 class="text-center">Video 2 - 2021 Capabilities</h2>
+                <br>
+                <h2 class="text-center">Video Demonstration 2</h2>
+                <br>
                 <div class="embed-responsive embed-responsive-16by9">
                     <video width="1920" height="1080" controls="true" class="embed-responsive-item" >
                         <source src="video/Video002b_Spr2021.mp4" type="video/mp4">
-                    </video>
-            </div>
-        </div>
-    </div>
-    <br>
-    <hr>
-
-    <div class="container">
-        <h2 class="text-center">Images</h2>
-        <br>
-        
-        <!-- Carousel should pop out a gallery view of pictures -->
-        <div id="carouselExampleIndicators" data-toggle="modal" data-target="#exampleModal" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="img/SouthernCraters.PNG" alt="First slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>My Caption Title (1st Image)</h5>
-                <p>The whole caption will only show up if the screen is at least medium size.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="img/latlongrat.PNG" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>My Caption Title (1st Image)</h5>
-                <p>The whole caption will only show up if the screen is at least medium size.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="img/apollo17objects.PNG" alt="Third slide">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>My Caption Title (1st Image)</h5>
-                <p>The whole caption will only show up if the screen is at least medium size.</p>
-            </div>
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    </div>
-    
-        </div>
-         <br>
-         <br>
-    
-    <hr>
-    <div class="container">
-    	<br>
-    	<br>
-        <h2 class="text-center">Meet the Team</h2>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-4">
-                <h4 class="text-center">Dr. Parul Agrawal</h4>
-                <br>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img src="profile-img/parulagrawal2.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
-                 <br>
-            </div>
-            <br class="extra-space">
-            <div class="col-md-4">
-                <h4 class="text-center">Mark Peterson</h4>
-                <br>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img src="https://placeimg.com/150/150/nature" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
-                 <br>
-            </div>
-            <br class="extra-space">
-            <div class="col-md-4">
-                <h4 class="text-center">Miguel Del Castillo</h4>
-                <br>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img src="https://placeimg.com/150/150/arch" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
-                 <br>
-            </div>
-             <br>
-        </div>
-        <br>
-        <br>
-        <div class="row row-eq-height">
-            <div class="col-md-3 text-center">
-                <h4 class="text-center give-me-less-height">Kaitlyn Dickinson</h4>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img src="profile-img/KaitlynDickinson.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
-                 <br>
+                        </video>
+                    </div>
+                </div>
             </div>
             <br>
-            <div class="col-md-3">
-                <h4 class="text-center give-me-more-height">Hari Iyer</h4>
-                <figure class="figure img-responsive center-block d-block mx-auto ">
-                    <img src="profile-img/HariIyer.PNG" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
+            <hr>
+
+            <div class="container">
+
+
+            </div>
+            <br>
+            <div class="container">
+               <h2 class="text-center">Meet the Team</h2>
+               <br>
+               <br>
+               <div class="row">
+                <div class="col-md-4">
+                    <h4 class="text-center give-me-more-height">Dr. Parul Agrawal</h4>
+                    <br>
+                    <figure class="figure img-responsive center-block d-block mx-auto">
+                        <img src="profile-img/parulagrawal2.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                    <br>
+                </div>
+                <br class="extra-space">
+                <div class="col-md-4">
+                    <h4 class="text-center give-me-more-height">Mark Peterson</h4>
+                    <br>
+                    <figure class="figure img-responsive center-block d-block mx-auto">
+                        <img src="profile-img/MarkPetersonLinkedin.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                    <br>
+                </div>
+                <br class="extra-space">
+                <div class="col-md-4">
+                    <h4 class="text-center give-me-less-height">Miguel Del Castillo</h4>
+                    <br>
+                    <figure class="figure img-responsive center-block d-block mx-auto">
+                        <img src="profile-img/MiguelDelCastilloLinkedin.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                    <br>
+                </div>
                 <br>
             </div>
-             <br>
+            <br>
+            <br>
+            <div class="row row-eq-height">
+                <div class="col-md-3 text-center">
+                    <h4 class="text-center give-me-less-height">Kaitlyn Dickinson</h4>
+                    <figure class="figure img-responsive center-block d-block mx-auto">
+                        <img src="profile-img/KaitlynDickinson.jpg" id="kd-img" class="img-responsive center-block d-block mx-auto w-100 headshots-row-2" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                    <br>
+                </div>
+                <br>
                 <div class="col-md-3">
-                <h4 class="text-center give-me-less-height">Geoffrey Norman</h4>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img src="https://placeimg.com/150/150/animals" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
+                    <h4 class="text-center give-me-more-height">Hari Iyer</h4>
+                    <figure class="figure img-responsive center-block d-block mx-auto ">
+                        <img src="profile-img/HariIyer.PNG" class="img-responsive center-block d-block mx-auto w-100 headshots-row-2" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                    <br>
+                </div>
                 <br>
-            </div>
-             <br>
-                        <div class="col-md-3">
-                <h4 class="text-center give-me-more-height">Tyler Choi</h4>
-                <figure class="figure img-responsive center-block d-block mx-auto">
-                    <img src="https://placeimg.com/150/150/nature" class="img-responsive center-block d-block mx-auto w-100 headshots" alt="example image" />
-                     <figcaption class="figure-caption text-center">A caption for the above image.</figcaption>
-                </figure>
+                <div class="col-md-3">
+                    <h4 class="text-center give-me-less-height">Geoffrey Norman</h4>
+                    <figure class="figure img-responsive center-block d-block mx-auto">
+                        <img id="gn-img"src="profile-img/GeoffNorman.png" class="img-responsive center-block d-block mx-auto w-100 headshots-row-2" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                    <br>
+                </div>
+                <br>
+                <div class="col-md-3">
+                    <h4 class="text-center give-me-more-height">Tyler Choi</h4>
+                    <figure class="figure img-responsive center-block d-block mx-auto">
+                        <img src="profile-img/TylerChoiLinkedin.jpg" class="img-responsive center-block d-block mx-auto w-100 headshots-row-2" alt="example image" />
+                        <!-- <figcaption class="figure-caption text-center">A caption for the above image.</figcaption> -->
+                    </figure>
+                </div>
+                <br>
             </div>
             <br>
         </div>
-         <br>
-    </div>
 
-   </div> 
-
-  <div class="card text-center">
-
-  <div class="card-body">
-    <h3 class="card-title">Contact Dr. Parul Agrawal for questions regarding the Celestial Mapping System:</h3>
-    <br>
-    <a href="mailto:parul.agrawal-1@nasa.gov" class="btn btn-dark"><h3 id="email-us">Email Us</h3></a>
-  </div>
-
+    </div> 
 </div>
+    <div class="card text-center">
+
+        <div class="card-body">
+            <h3 class="card-title">Reach out to learn more about the Celestial Mapping System</h3>
+            <br>
+            <a href="mailto:parul.agrawal-1@nasa.gov" class="btn btn-dark"><h3 id="email-us">Email Us</h3></a>
+        </div>
+
+    </div>
 
     <div class="wrapper banner-wrapper">
         <div class="page-end-spacer">
             <div class="banner">
-            <!-- <canvas class="banner-background" id="banner-cms" width="1280" height="500" style="touch-action: none;">
-             <img src="img/steel_flipped.png" class="img-fluid" alt="Cropped image of LOLA Steel Blue projection of the lunar surface.">   
-            </canvas> -->
-            <!-- <div class="container"> -->
-                
-                    <div class="row banner-logos">
-                        <div class="cms-logo-col">
-                            <img class="cms-logo" src="img/cms-logo.png">
-                        </div>
-                        <div class="nasa-logo-col"> 
-                            <img class="cms-logo" src="img/nasa-meatball-logo.png">
-                        </div>
+                <div class="row banner-logos">
+                    <div class="cms-logo-col">
+                        <img class="cms-logo" src="img/cms-logo.png">
                     </div>
-            <!-- </div> -->
-        </div>
+                    <div class="nasa-logo-col"> 
+                        <img class="cms-logo" src="img/nasa-meatball-logo.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
 </body>
 
-    <!-- For simplicity, loading this script after the DOM is loaded by placing it at the end of the document for now. -->
-    <!-- <script type="text/javascript" src="js/canvasbg.js"></script> -->
+<!-- For simplicity, loading this script after the DOM is loaded by placing it at the end of the document for now. -->
+<!-- <script type="text/javascript" src="js/canvasbg.js"></script> -->
 
 </html>
