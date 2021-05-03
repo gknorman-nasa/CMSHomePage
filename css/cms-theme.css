@@ -84,6 +84,7 @@ body {
 
 .banner {
 	background-color: black;
+
    /* height: 20rem;*/
    /* background: transparent;*/
 
@@ -116,9 +117,10 @@ body {
 }
 
 .row.banner-logos {
-	display: flex;
-	padding-left : 1rem;
-	padding-right: 1rem;
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
 }
 
 .row.banner-logos::after{
@@ -200,7 +202,19 @@ margin-bottom: auto;
 
 .object-position-top {
   object-position: top;
+} 
+
+
+
+div.row{
+  margin-left: 0;
+  margin-right: 0;
 }
+/**/
+/*div.row.more-left-right-padding.banner-logos {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}*/
 
 @media all and (max-width: 576px){
   .body-container {
